@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 25px;
+}
+
+#question {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 80px;
+    margin-bottom: 80px;
+    font-size: 30px;
+}
+
+.choice-container {
+    display: flex;
+    align-items: center;
+      width: 900px;
+      height: 75px;
+      background-color: orange;
+      gap: 25px;
+}
+
