@@ -5,121 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="script.js" type="module" defer></script>
     <title>Home Page</title>
 </head>
+<!-- This Page should Show first when loaded -->
 <body id="index-html">
-    <div class ="container">
+    <div class="container">
         <div class="home">
-        <h1>Test Your Knowledge?</h1>
-        <a href="/game.html" class="Btn" id="start">Start Game</a>
-        <a href="/highscores.html" class="Btn" id="highscores">High Scores</a>
+            <h1>Test Your Knowledge?</h1>
+            <button class="start">Start Game</button>
         </div>
     </div>
-     
-</body>
-<body id="game-html">
-    <div class="game-container">
-        <div id="game">
-        <h1 class="h1">Which Path Will You Take?</h1>
-        <div class="buttons">
-            <a href="/manga.html" class="Btn" id="manga">Manga</a>
-            <a href="/anime.html" class="Btn" id="anime">Anime</a>
-        </div>
-        </div>
-    </div>
-    <div>
-    </div>
-</body>
-<body id="anime-html">
-    <div class="ani-container">
-        <div id="anime">
-        <a href="/newgen.html" class=Btn id="newgen">New Gen</a>
-        <a href="/big3.html" class="Btn" id="big3">The Big 3</a>
-        <a href="/random.html" class="Btn" id="rand">Random</a>
-        </div>
-    </div>
-</body>
-<body id="manga-html">
-    <div class="man-container">
-        <div id="manga">
-        <a href="/newgen.html" class=Btn id="newgen">New Gen</a>
-        <a href="/big3.html" class="Btn" id="big3">The Big 3</a>
-        <a href="/random.html" class="Btn" id="rand">Random</a>
-        </div>
-    </div>
-</body>  
-<body id="newgen-html">
-    <div id="question">Whats the answer</div>
+
+
+    <div id="question">What's the answer?</div>
     <div class="choice-container">
         <p class="choice-letter">A</p>
-        <p class="choice-text" data-number="1">Choice</p>
+        <button class="nxt" id="choices1" >Choice</button>
     </div>
     <div class="choice-container">
         <p class="choice-letter">B</p>
-        <p class="choice-text" data-number="2">Choice</p>
+        <button class ="nxt" id="choices2">Choice</button>
     </div>
+    
     <div class="choice-container">
         <p class="choice-letter">C</p>
-        <p class="choice-text" data-number="3">Choice</p>
+        <button class="nxt" id="choices3">Choice</button>
     </div>
     <div class="choice-container">
         <p class="choice-letter">D</p>
-        <p class="choice-text" data-number="4">Choice</p>
+        <button class="nxt"  id="choices4">Choice</button>
     </div>
-    <div>
-         
+    <button class="restart">Restart Game</button>
+
+    <div class="end">
+        <span>GAME OVER!!!!</span>
     </div>
-</body>
-<body id="big3-html">
-    <div id="question">Whats the answer</div>
-    <div class="choice-container">
-        <p class="choice-letter">A</p>
-        <p class="choice-text" data-number="1">Choice</p>
-    </div>
-    <div class="choice-container">
-        <p class="choice-letter">B</p>
-        <p class="choice-text" data-number="2">Choice</p>
-    </div>
-    <div class="choice-container">
-        <p class="choice-letter">C</p>
-        <p class="choice-text" data-number="3">Choice</p>
-    </div>
-    <div class="choice-container">
-        <p class="choice-letter">D</p>
-        <p class="choice-text" data-number="4">Choice</p>
-    </div>
-    <div>
-         
-    </div>
-</body>
-<body id="random-html">
-    <div id="question">Whats the answer</div>
-    <div class="choice-container">
-        <p class="choice-letter">A</p>
-        <p class="choice-text" data-number="1">Choice</p>
-    </div>
-    <div class="choice-container">
-        <p class="choice-letter">B</p>
-        <p class="choice-text" data-number="2">Choice</p>
-    </div>
-    <div class="choice-container">
-        <p class="choice-letter">C</p>
-        <p class="choice-text" data-number="3">Choice</p>
-    </div>
-    <div class="choice-container">
-        <p class="choice-letter">D</p>
-        <p class="choice-text" data-number="4">Choice</p>
-    </div>
-    <div>
-         
-    </div>
-</body>
+       
+</body>        
 </html>
-
-
-
-
-
-
-

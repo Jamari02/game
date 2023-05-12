@@ -1,7 +1,7 @@
 export const animeRandom = [
     {
-      question: "What is the name of Kakyion’s Stand in Jojos Bizarre Adventure?",  
-      "answers": [
+      questions: "What is the name of Kakyion’s Stand in Jojos Bizarre Adventure?",  
+      answers: [
       "Hermit Purple",
       "Star Platinum",
       "Hierophant Green",
@@ -11,7 +11,7 @@ export const animeRandom = [
     },
 
     {
-     question:"In FullMetal Alchemist how did Edward fix his and Alphonse’s bodies?",
+     questions:"In FullMetal Alchemist how did Edward fix his and Alphonse’s bodies?",
        answers: [
          "Killing Father",
         "Giving up his Alchemy",
@@ -22,8 +22,8 @@ export const animeRandom = [
     },
 
     {
-     question:"Who has Levi Ackermans only surviving relative in the beginning of AOT season 3?",
-     "answers": [
+     questions:"Who has Levi Ackermans only surviving relative in the beginning of AOT season 3?",
+     answers: [
         "Kenny", 
         "Mikasa",
         "Grisha",
@@ -33,7 +33,7 @@ export const animeRandom = [
     },
 
     {
-    question: "Who is Alucards master in Hellsing Ultimate?",
+    questions: "Who is Alucards master in Hellsing Ultimate?",
     answers: [
         "Seras Victoria",
         "Integra Hellsing",
@@ -44,7 +44,7 @@ export const animeRandom = [
     },
 
     {
-    question: " How did Takasugi lose one eye in Gintama?",
+    questions: " How did Takasugi lose one eye in Gintama?",
      answers: [
         "A throwing knife while trying to save his master",
         "Slashed while fighting an alien horde", 
@@ -55,7 +55,7 @@ export const animeRandom = [
     },
 
     {
-     question:"Which character took out Super Buu in DBZ?",
+     questions:"Which character took out Super Buu in DBZ?",
      answers: [
       "Gogeta",
       "Gohan", 
@@ -66,8 +66,8 @@ export const animeRandom = [
     },
    
     {
-        question: "In death note who succeeded L after his passing in the search for Kira?",
-        "answers": [
+        questions: "In death note who succeeded L after his passing in the search for Kira?",
+        answers: [
             "Watari",   
             "Teru", 
             "Touta",
@@ -77,7 +77,7 @@ export const animeRandom = [
     },
 
     {
-      question:"What is Lelouchs Geass power in Code Geass?",
+      questions:"What is Lelouchs Geass power in Code Geass?",
       answers: [
         "Illusions",
         "Impossible to lie", 
@@ -88,8 +88,8 @@ export const animeRandom = [
     },
 
     {
-        question: "In Soul Eater what ins the term for when a meister and weapons souls are in sync?",
-        "answers":[
+        questions: "In Soul Eater what ins the term for when a meister and weapons souls are in sync?",
+        answers:[
           "Soul synchronization",
           "True Soul",
           "Soul Resonance",
@@ -99,8 +99,8 @@ export const animeRandom = [
     },
 
     {
-        question: " In HunterXHunter who was Netero most wary of in the 12 Zodiacs?",
-        "answers": [
+        questions: " In HunterXHunter who was Netero most wary of in the 12 Zodiacs?",
+        answers: [
           "Dragon: Botobai Gigante",
           "Dog: Cheadle Yorkshire", 
           "Boar: Ging Freecss",
@@ -114,7 +114,7 @@ export const animeRandom = [
 export const animeBig3 = [
        
     {
-        question:"Who was the first character Naruto used the Rasengan on?",
+        questions:"Who was the first character Naruto used the Rasengan on?",
         answers:[
             "Kabuto",
             "Sasuke",
@@ -125,7 +125,7 @@ export const animeBig3 = [
     },
 
     {
-        question:"How did Luffy get the Gum Gum fruit?",
+        questions:"How did Luffy get the Gum Gum fruit?",
         answers:[
             "Found it in the junk yard",
             "Ace gave it to him",
@@ -136,7 +136,7 @@ export const animeBig3 = [
     },
      
     {
-        question:"How did Ichigo lose his soul reaper powers? ",
+        questions:"How did Ichigo lose his soul reaper powers? ",
         answers:[
         "Sucked out by any enemy espada",
         "Performing the final Getsuga Tensho",
@@ -147,7 +147,7 @@ export const animeBig3 = [
     },
 
     {    
-        question:"What attack did Sasuke use in a final attempt to kill Itachi?",
+        questions:"What attack did Sasuke use in a final attempt to kill Itachi?",
         answers:[
             "Chidori Stream" ,
             "Susano",
@@ -158,7 +158,7 @@ export const animeBig3 = [
     },
      
     {
-        question:"Which version of Gear 4 was used to finish the fight between Luffy and Katakuri?",  
+        questions:"Which version of Gear 4 was used to finish the fight between Luffy and Katakuri?",  
         answers:[
             "Snake-Man" ,
             "Tank-Man",
@@ -169,7 +169,7 @@ export const animeBig3 = [
     },
 
     {
-        question:"Who was the first Kenpachi in bleach?",
+        questions:"Who was the first Kenpachi in bleach?",
         answers:[
        "Kenpachi Zaraki",
        "Genryusai",
@@ -180,7 +180,7 @@ export const animeBig3 = [
     },
 
     {
-        question:"Who gave Itachi there eye before falling off a cliff?",   
+        questions:"Who gave Itachi there eye before falling off a cliff?",   
         answers:[
         "Shisui Uchiha",
         "Fugaku Uchiha",
@@ -191,7 +191,7 @@ export const animeBig3 = [
     },
 
     {
-        question:"What is the name of the sword Zoro inherited from his disceased friend?",
+        questions:"What is the name of the sword Zoro inherited from his disceased friend?",
         answers:[
             "Enma" ,
             "Wado Ichimonji",
@@ -202,7 +202,7 @@ export const animeBig3 = [
     },
 
     {
-        question:" Who betrayed Aizen right before he became immortal?",
+        questions:" Who betrayed Aizen right before he became immortal?",
         answers:[
         "Tosen",
         "Ulquiorra",
@@ -213,7 +213,7 @@ export const animeBig3 = [
     },
 
     {
-        question:"What was the first jutsu Kakashi created? ",
+        questions:"What was the first jutsu Kakashi created? ",
         answers:[
         "Water Dragon" ,
         "Lightning Clone" ,
@@ -229,7 +229,7 @@ export const animeBig3 = [
 export const animeNewGen = [
     
     {
-        question:"In Jujutsu Kaisen what is the name for Gojos eyes?",
+        questions:"In Jujutsu Kaisen what is the name for Gojos eyes?",
         answers:[
         "All seeing", 
         "God eyes",
@@ -240,7 +240,7 @@ export const animeNewGen = [
      },
  
       {
-         question:"Who killed Noelles mother in black clover?",
+         questions:"Who killed Noelles mother in black clover?",
          answers:[
              "Vanica",
              "Dante", 
@@ -251,7 +251,7 @@ export const animeNewGen = [
       },
  
       {
-         question:" Where did Tanjiro learn the Hinokami Kaguara from?",
+         questions:" Where did Tanjiro learn the Hinokami Kaguara from?",
          answers:[
              "He acted on pure instinct",
              "His Father",
@@ -262,7 +262,7 @@ export const animeNewGen = [
       },
  
       {
-         question:"How did Pochita become Denjis heart in Chainsaw Man? ",
+         questions:"How did Pochita become Denjis heart in Chainsaw Man? ",
          answers:[
       "Denji ate Pochita",
       "A contract after Denji died",
@@ -273,7 +273,7 @@ export const animeNewGen = [
       },
  
       {
-         question:"How many users of one for all have existed?",
+         questions:"How many users of one for all have existed?",
          answers:[
              "4",
              "7",
@@ -284,7 +284,7 @@ export const animeNewGen = [
       },
  
       {
-         question:"Who is the number 1 Hero in One Punch Man ",
+         questions:"Who is the number 1 Hero in One Punch Man ",
          answers:[
              "Saitama ",
              "Tatsumaki",
@@ -295,7 +295,7 @@ export const animeNewGen = [
       },
  
       {
-         question:"Whos Mobs mentor in Mob Psycho 100?",
+         questions:"Whos Mobs mentor in Mob Psycho 100?",
          answers:[
              "Reigen",
              "Dimple",
@@ -306,7 +306,7 @@ export const animeNewGen = [
       },
  
       {
-         question:"How long was Senku petrified?",
+         questions:"How long was Senku petrified?",
          answers:[
              "3700 years",
              "5000 years" ,
@@ -317,7 +317,7 @@ export const animeNewGen = [
       },
  
       {
-         question:"In The Promised Neverland what is the relationship between Ray and Isabel?",
+         questions:"In The Promised Neverland what is the relationship between Ray and Isabel?",
          answers:[
          "Foster family",
         "Mother/ Son",
@@ -328,7 +328,7 @@ export const animeNewGen = [
       },
  
       {
-         question:"Who is considered the strongest character in the story of Vinland Saga?",
+         questions:"Who is considered the strongest character in the story of Vinland Saga?",
          answers:[
          "Thorkell",
          "Floki" ,
@@ -341,7 +341,7 @@ export const animeNewGen = [
 
 export const mangaRandom = [
     {
-        question:"In Jojos Bizarre Adventure part 7 who is the best friend of Johnny Joestar?",
+        questions:"In Jojos Bizarre Adventure part 7 who is the best friend of Johnny Joestar?",
         answers:[
      "Ringo Dingo",
      "Hot Pants" ,
@@ -352,7 +352,7 @@ export const mangaRandom = [
     },
 
     {
-        question:"What is the name of the armor Guts receives from the witch in the woods in berserk?",
+        questions:"What is the name of the armor Guts receives from the witch in the woods in berserk?",
         answers:[
             "Berserker Armor", 
             "Heavenly Wolf Armor" ,
@@ -363,7 +363,7 @@ export const mangaRandom = [
     },
 
     {
-        question:" How many princes are on the voyage to the dark continent in HunterXHunter?",
+        questions:" How many princes are on the voyage to the dark continent in HunterXHunter?",
         answers:[
             "10", 
             "14",
@@ -374,7 +374,7 @@ export const mangaRandom = [
     },
 
     {
-        question:"Who is the One Eyed King in Tokyo Ghoul?",
+        questions:"Who is the One Eyed King in Tokyo Ghoul?",
         answers:[
       "Kishou Arima",
       "Juuzou Suzuya",
@@ -385,7 +385,7 @@ export const mangaRandom = [
     },
 
     {
-        question:"In Haikyuu where does Hinata move to after graduating High School ",
+        questions:"In Haikyuu where does Hinata move to after graduating High School ",
         answers:[
         "Brazil",
         "Korea", 
@@ -396,7 +396,7 @@ export const mangaRandom = [
     },
 
     {
-        question:"What is the name of the main villain of the Chapter Black Saga in YuYu Hakusho who seeks to create a world of perfect psychics by absorbing the abilities of others?",
+        questions:"What is the name of the main villain of the Chapter Black Saga in YuYu Hakusho who seeks to create a world of perfect psychics by absorbing the abilities of others?",
         answers:[
         "Toguro",
         "Sensui",
@@ -407,7 +407,7 @@ export const mangaRandom = [
     },
 
     {
-        question:"How many Jojos Bizarre adventure parts exist?",
+        questions:"How many Jojos Bizarre adventure parts exist?",
         answers:[
             "7",
             "8" ,
@@ -418,7 +418,7 @@ export const mangaRandom = [
     },
 
     {
-        question:"Who is the female lead of Berserk?",
+        questions:"Who is the female lead of Berserk?",
         answers:[
         "Schierke",
         "Farnese",
@@ -429,7 +429,7 @@ export const mangaRandom = [
     },
 
     {
-        question:" Who defeats Hisoka in the floor boss battle of Heavenly Arena?",
+        questions:" Who defeats Hisoka in the floor boss battle of Heavenly Arena?",
         "answers":[
          "Feitan",   
          "Silva Zoldyk", 
@@ -440,7 +440,7 @@ export const mangaRandom = [
     },
 
     {
-    question:"In the Slam Dunk manga, what position does the protagonist, Sakuragi Hanamichi, play on the basketball team?",
+    questions:"In the Slam Dunk manga, what position does the protagonist, Sakuragi Hanamichi, play on the basketball team?",
         answers:[
             "Point guard",
             "Shooting guard",
@@ -454,7 +454,7 @@ export const mangaRandom = [
 
 export const mangaBig3 = [
     {
-        question:"What color does Luffys hair turn in his Gear 5 transformation?",
+        questions:"What color does Luffys hair turn in his Gear 5 transformation?",
         answers:[
             "Red",
             "Brown", 
@@ -465,7 +465,7 @@ export const mangaBig3 = [
     },
 
     {
-        question:"How does Obito survive his fight with Konan?",
+        questions:"How does Obito survive his fight with Konan?",
         answers:[
          "Uses Izanagi",
          "Uses Susano",
@@ -476,7 +476,7 @@ export const mangaBig3 = [
     },
     
     {
-        question:"What is Ichigos true Heritage?",
+        questions:"What is Ichigos true Heritage?",
         answers:[
          "A soul reaper with ties to the soul king",
          "A perfect mix of Soul Reaper, Quincy, Hollow, and Fullbringer", 
@@ -487,7 +487,7 @@ export const mangaBig3 = [
     },
 
     {
-        question:"What mantle does Zoro take up in order to further help Luffy achieve his goal",
+        questions:"What mantle does Zoro take up in order to further help Luffy achieve his goal",
         answers:[
         "Death Reaper",
         "Sword God", 
@@ -498,7 +498,7 @@ export const mangaBig3 = [
     },
 
     {
-        question:" In their final battle what happened at Naruto and Sasukes final clash?",
+        questions:" In their final battle what happened at Naruto and Sasukes final clash?",
         answers:[
         "Sasuke was defeated and almost killed",
         "Kakashi intervened before they could clash", 
@@ -509,7 +509,7 @@ export const mangaBig3 = [
     },
 
     {
-        question: "In the bleach Hell one shot, which character makes their return?",
+        questions: "In the bleach Hell one shot, which character makes their return?",
         answers:[
         "Genryusai",
         "Unohana",
@@ -520,7 +520,7 @@ export const mangaBig3 = [
     },
 
     {
-        question:"What happened to Kidd and Law after leaving Wano? ",
+        questions:"What happened to Kidd and Law after leaving Wano? ",
         answers:[
         "They were pursued and almost captured by the Navy", 
         "They met each other and clashed leaving both crews heavily damaged", 
@@ -531,7 +531,7 @@ export const mangaBig3 = [
     },
 
     {
-        question:"Who was stated to hold the most powerful ocular genjutsu to ever exist?",
+        questions:"Who was stated to hold the most powerful ocular genjutsu to ever exist?",
         answers:[
         "Shisui Uchiha",
         "Itachi Uchiha" ,
@@ -542,7 +542,7 @@ export const mangaBig3 = [
     },
 
     {
-        question:"Who helped Ichigo in the finall fight Vs Ywach?",
+        questions:"Who helped Ichigo in the finall fight Vs Ywach?",
         answers:[
         "Kenpachi",
         "Rukia",
@@ -553,7 +553,7 @@ export const mangaBig3 = [
     },
 
     {
-        question:"Who destroyed the rebelling Island where Sabo was?",
+        questions:"Who destroyed the rebelling Island where Sabo was?",
         answers:[
             "Aokiji",
             "Akinu",
@@ -566,7 +566,7 @@ export const mangaBig3 = [
 
 export const mangaNewGen = [
     {
-        question:"Who was revealed to be Itadoris mom in Jujutsu Kaisen?",
+        questions:"Who was revealed to be Itadoris mom in Jujutsu Kaisen?",
         answers:[
             "Yuki Tsukomo",
             "Mei Mei",
@@ -577,7 +577,7 @@ export const mangaNewGen = [
     },
 
     {
-        question:"What relationship does Tanjiro have to Yorichi in Demon Slayer? ",
+        questions:"What relationship does Tanjiro have to Yorichi in Demon Slayer? ",
         answers:[
         "None. His ancestors were friends",
         "He is a direct descendant",
@@ -588,7 +588,7 @@ export const mangaNewGen = [
     },
 
     {
-        question:" Which series is a direct sequel to fire force?",
+        questions:" Which series is a direct sequel to fire force?",
         answers:[
             "Sakamoto Days", 
             "Soul Eater",
@@ -599,7 +599,7 @@ export const mangaNewGen = [
     },
 
     {
-        question:"In jujutsu Kaisen what was the first thing Gojo did once released from the prison realm?",
+        questions:"In jujutsu Kaisen what was the first thing Gojo did once released from the prison realm?",
         answers:[
          "Eat a good meal", 
          "Find Kenjaku",
@@ -610,7 +610,7 @@ export const mangaNewGen = [
     },
 
     {
-        question:"In My Hero Academia who is the hero Shigaraki fights from overseas?",
+        questions:"In My Hero Academia who is the hero Shigaraki fights from overseas?",
         answers:[
         "Big Red Dot",
         "Salaam",
@@ -621,7 +621,7 @@ export const mangaNewGen = [
     },
 
     {
-        question:"How does Boruto finally “Lose Everything”?",
+        questions:"How does Boruto finally “Lose Everything”?",
         answers:[
         "Naruto and Hinata are killed",
         "Boruto kills innocents", 
@@ -632,7 +632,7 @@ export const mangaNewGen = [
     },
 
     {
-        question:"Who is sent to island after the first wave with the intent of killing Gabimaru in Hells Paradise?",
+        questions:"Who is sent to island after the first wave with the intent of killing Gabimaru in Hells Paradise?",
         answers:[
         "Yui",
         "Village Leader", 
@@ -643,7 +643,7 @@ export const mangaNewGen = [
     },
 
     {
-        question:"What is Makimas true identity in Chainsaw Man? ",
+        questions:"What is Makimas true identity in Chainsaw Man? ",
         answers:[
         "The Control Devil", 
         "A US Spy", 
@@ -654,7 +654,7 @@ export const mangaNewGen = [
     },
 
     {
-        question:" Who is the fourth Zogratis Sibling in Black Clover?",
+        questions:" Who is the fourth Zogratis Sibling in Black Clover?",
         answers:[
         "Julius",
       "A Random", 
@@ -665,7 +665,7 @@ export const mangaNewGen = [
     },
 
     {
-        question:"Who holds the nickname “Blue Locks Hero” in Blue Lock?",
+        questions:"Who holds the nickname “Blue Locks Hero” in Blue Lock?",
         answers:[
         "Shidou Ryusei",
         "Barou Shuhei",
