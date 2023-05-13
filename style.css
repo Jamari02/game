@@ -2,11 +2,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+  }
+  
 
 
-body {
-   
-    background: linear-gradient(blue, orange, black);
+body.main {
+    --hue: var(--hue-neutral);
+    background-image: url(New\ Gen.png);
+    background-size: cover;
     padding: 0;
     margin: 0;
     display: flex;
@@ -14,20 +21,43 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
+    font-size: 20px;
 }
 
+body.correct {
+    background: linear-gradient(green, black)
+}
+
+body.wrong {
+    background:linear-gradient(red, black);
+  
+}
+
+#question {
+   font-size: 30px;
+}
+
+.btn.correct {
+    background-image: url(Yuji\ header.jpeg);
+    background-size: cover;
+    
+  }
+
+.btn.wrong {
+    background-image: url(Red\ eye.jpeg); 
+    background-size: cover;
+}
+
+  
 .container {
     height: 400px;
     width: 800px;
     max-width: 80%;
     border-radius: 5px;
-    background-color: antiquewhite;
+    background: linear-gradient(antiquewhite, black);
+    background-size: cover;
     padding: 10px; 
 
-}
-
-.highScore {
-    height: 40px;
 }
 
 .btn-grid {
@@ -51,16 +81,34 @@ body {
     margin-bottom: 50px;
 }
 
+#submit {
+    height:75px;
+    width:150px;
+    margin-bottom: 50px;
+    background: linear-gradient(blue, orange, black);
+}
+
+#restart {
+    height:75px;
+    width:150px;
+    margin-bottom: 50px;
+    background: linear-gradient(blue, orange, black);
+    margin-left: 30px;
+}
+
 .btn {
     border-radius: 10px;
     height: 100px;
     background-color: orange;
+    font-size: 25px;
 }
 
 .btn:hover {
     border: black;
     cursor: pointer;
 }
+
+
 
 .controls {
     display: flex;
@@ -71,3 +119,9 @@ body {
 .hide {
     display: none;
 }
+
+.img-container {
+    height: 200px;
+    
+}
+

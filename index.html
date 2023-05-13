@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+z<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,8 +8,9 @@
     <script src="script.js" type="module" defer></script>
     <title>Home Page</title>
 </head>
-<!-- This Page should Show first when loaded -->
-<body>
+
+<body class="main">
+    
     <div class="container">
         <div id="highScore"></div>
         <div id="question-container" class="hide">
@@ -19,13 +20,22 @@
             <button class="btn" id="choices2">Answer 2</button>
             <button class="btn" id="choices3">Answer 3</button>
             <button class="btn" id="choices4">Answer 4 </button>
+            
         </div>
            </div>
         <div class="controls">
         <button id="start-btn" class="start-btn btn">Start</button>
         <button id="next-btn" class="next-btn btn hide">Next</button>
-        </div>
+        <button id="submit" class="btn hide">Submit</button>
+        <button id="restart" class="restart-btn btn hide">Restart</button>
+        
+        <div id="score"></div>
+
     </div>
+
+
+
+</body>
+
        
-</body>        
 </html>
