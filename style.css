@@ -1,89 +1,73 @@
-.hide {
-    display: none;
-}
-
-/* home css */
-
 * {
     box-sizing: border-box;
-    
-}
- 
-body {
-    background-color: rgb(43, 76, 226);
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 
-h1 {
-    font-size: 75px;
-    color: orange  
-}
-
-
-/* newgen css */
 
 body {
+   
+    background: linear-gradient(blue, orange, black);
+    padding: 0;
+    margin: 0;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     width: 100vw;
-    gap: 25px;
+    height: 100vh;
 }
 
-#question {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    height: 80px;
-    margin-bottom: 80px;
-    font-size: 30px;
+.container {
+    height: 400px;
+    width: 800px;
+    max-width: 80%;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    padding: 10px; 
+
 }
 
-.choice-container {
-    display: flex;
-    align-items: center;
-      width: 900px;
-      height: 100px;
-      background-color: orange;
-      gap: 25px;
-      margin-bottom: 30px;
-      border-radius: 5px;
+.highScore {
+    height: 40px;
 }
 
-.nxt {
-    width: 500px;
-    font-size: 30px;
+.btn-grid {
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 40px;
+    margin: 20px 0;
+}
+
+#start-btn {
+    height:75px;
+    width:150px;
+    margin-bottom: 50px;
+    background: linear-gradient(blue, orange, black);
+}
+
+#next-btn {
+    height:75px;
+    width: 150px;
+    background: linear-gradient(blue, orange, black);
+    margin-bottom: 50px;
+}
+
+.btn {
+    border-radius: 10px;
+    height: 100px;
     background-color: orange;
-    border: orange;
 }
 
-.nxt:hover {
-     background-color: rgb(118, 118, 132);
-     cursor: pointer;
+.btn:hover {
+    border: black;
+    cursor: pointer;
 }
 
-.restart {
-    display: none;
-
-}
-
-.correctAnswer {
-    background-color: green;
-}
-
-
-.end {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+.controls {
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
-    z-index: 100;
+}
+
+.hide {
+    display: none;
 }

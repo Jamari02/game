@@ -1,195 +1,144 @@
-import { animeNewGen} from './Questions.js'
 
 // DOM elements
-const questionElement = document.querySelector('#question')
-const choicesElements = document.querySelectorAll('.choice-text')
-const option1Element = document.querySelector('#choices1')
-const option2Element = document.querySelector('#choices2')
-const option3Element = document.querySelector('#choices3')
-const option4Element = document.querySelector('#choices4')
-const scoreElement = document.querySelector('#score')
-const nxtBttn = document.querySelector('.nxt')
-const startBttn = document.querySelector('.start');
+const startButton = document.getElementById('start-btn')
+const nextButton = document.getElementById('next-btn')
+const questionContainerEl = document.getElementById('question-container')
+let randomQuestions, currentQuestionIndex
+const questionElement = document.getElementById('question')
+const answerButtonsElement = document.getElementById('answer-buttons')
 
-// console.log("questions: ")
-console.log(startBttn)
-console.log(nxtBttn)
+let correctAnswer = []
+const MAX_QUESTIONS = 10
 
+const highScore = document.getElementById('highScore')
 
-// Quiz variables
-let currentQuestion = {}
-let correctAnswer = true
-let score = 0
-let questionCount = 0
-let questions = [...animeNewGen ]
-let usedQuestions = []
+// Variables
+let questions = [
+  {
+    questions: 'In Jujutsu Kaisen what is the name for Gojos eyes?',
+    answers: ['All seeing', 'God eyes', 'Six eyes', 'Eyes of destiny'],
+    answer: 'Six eyes'
+  },
+  {
+    questions: 'Who killed Noelles mother in black clover?',
+    answers: ['Vanica', 'Dante', 'Zenon', 'She died from a disease'],
+    answer: 'Vanica'
+  },
+  {
+    questions: 'Where did Tanjiro learn the Hinokami Kaguara from?',
+    answers: [
+      'He acted on pure instinct',
+      'His Father',
+      'A lonely old man',
+      'Scrolls he found while training'
+    ],
+    answer: 'His Father'
+  },
+  {
+    questions: 'How did Pochita become Denjis heart in Chainsaw Man? ',
+    answers: [
+      'Denji ate Pochita',
+      'A contract after Denji died',
+      'Open heart surgery to save his life',
+      'Another devil forced them together'
+    ],
+    answer: 'A contract after Denji died'
+  },
+  {
+    questions: 'How many users of one for all have existed?',
+    answers: ['4', '7', '9', '8'],
+    answer: '9'
+  },
+  {
+    questions: 'Who is the number 1 Hero in One Punch Man ',
+    answers: ['Saitama', 'Tatsumaki', 'Blast', 'Flashy Flash'],
+    answer: 'Blast'
+  },
+  {
+    questions: 'Who’s Mob’s mentor in Mob Psycho 100?',
+    answers: ['Reigen', 'Dimple', 'Ritsu', 'Teruki'],
+    answer: 'Reigen'
+  }
 
+]
 
-
-
-
-// Constants
-const HIGH_SCORE = 100
-const QUESTION_AMOUNT = 9
-
-// Create a copy of the questions array to avoid modifying the original array
-let unusedQuestions = [...questions]
-
-// Function to start the game
+// Start game function, once you click on the start game button this function will execute
 function startGame() {
-    questionCount = 0
-    score = 0
-    console.log("starting!");
-    nextQuestion()
+console.log('Started')
+startButton.classList.add('hide')
+randomQuestions = questions.sort(() => Math.random() - .5)
+currentQuestionIndex = 0
+questionContainerEl.classList.remove('hide')
+nextQuestion()
 }
 
-// Function to display the next question
 function nextQuestion() {
-    if (unusedQuestions.length === 0 || questionCount >= QUESTION_AMOUNT) {
-        console.log('end game')
-        document.querySelector('.end').style.display = 'flex'
-        // End the game if all questions have been asked or the question limit has been reached
-        localStorage.setItem('currentScore', score)
-    }
+    resetState()
+   showQuestion(randomQuestions[currentQuestionIndex])
 
-    console.log(correctAnswer); // add this line to log the value of correctAnswer
+}
+
+function showQuestion(question) {
+    questionElement.innerText = question.questions
+    question.answers.forEach(answer => {
+        const button =document.createElement('button')
+        button.innerText = answer
+        button.classList.add('btn')
+        if(answer === question.answer) {
+            button.dataset.correct = true
+            correctAnswer.push(answer)
+            console.log(correctAnswer)
+            highScore.innerText = correctAnswer.length
+        }
+        button.addEventListener('click', selectAnswer)
+        answerButtonsElement.appendChild(button)
+    
+    })
+}
+
+function resetState() {
+    nextButton.classList.add('hide')
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+    }
+}
+
+function selectAnswer(e) {
+    const selectedButton = e.target
+    const correct = selectedButton.dataset.correct
+    setStatusClass(document.body, correct)
+    Array.from(answerButtonsElement.children).forEach(button => {
+      setStatusClass(button, button.dataset.correct)
+    }) 
+    if (randomQuestions.length > currentQuestionIndex + 1) {
+      nextButton.classList.remove('hide')
+    } else {
+      startButton.innerText = 'Restart'
+      startButton.classList.remove('hide')
+    }
+  }
+
   
 
-
-    // Increment the question count and display the progress text
-    questionCount+1
-    console.log(questionCount++)
-    
-    console.log(currentQuestion)
-    // Choose a random question from the unused questions array
-    const questionsIndex = Math.floor(Math.random() * unusedQuestions.length)
-    currentQuestion = unusedQuestions[questionsIndex]
-
-    // Check if the chosen question has already been used
-    if (usedQuestions.includes(currentQuestion)) {
-        // If the question has already been used, get another question
-       return nextQuestion()
+function setStatusClass(element, correctAnswer) {
+    clearStatusClass(element)
+    if(correctAnswer) {
+        element.classList.add('correct')
+    } else {
+        element.classList.add('wrong')
     }
-
-    // Add the chosen question to the usedQuestions array
-    usedQuestions.push(currentQuestion)
-
-    // Display the question and answer choices
-    questionElement.innerText = currentQuestion.questions
-    option1Element.innerText = currentQuestion.answers[0]
-    option2Element.innerText = currentQuestion.answers[1]
-    option3Element.innerText = currentQuestion.answers[2]
-    option4Element.innerText = currentQuestion.answers[3]
-
-    // Shuffle the answer choices
-    shuffleArray(currentQuestion.answers)
-
-    const selectedQuestions = questions.slice(0, 10)
-
-    correctAnswer = true
 }
-// This will ensure that each question is only asked once before the game ends.
+
+function clearStatusClass(element) {
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
+}
 
 
-    // Display the question and answer choices
-    questionElement.innerText = questions[0].questions
-    
-    option1Element.innerText = questions[0].answers[0]
-    
-    option2Element.innerText = questions[0].answers[1]
-    
-    option3Element.innerText = questions[0].answers[2]
-    
-    option4Element.innerText = questions[0].answers[3]
-    
-
-
-
-    function shuffleArray(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [array[i], array[j]] = [array[j], array[i]];
-        }
-      }
-
-      choicesElements.innerText = questions[0].answers
-      console.log(questions[0].answers)
-      
-
-      shuffleArray(questions);
-      
-    // Remove the chosen question from the unused questions array
-    unusedQuestions.splice(questions, 1)
-
-    correctAnswer = true
-
-
-
-// Add event listeners to each answer choice
-choicesElements.forEach(choices => {
-    choices.addEventListener('click', e => {
-        if (!correctAnswer) 
-
-        // Mark the answer as incorrect if it is incorrect
-        correctAnswer = false
-        const pickedChoice = e.target
-        const pickedAnswer = pickedChoice.dataset['number']
-        let classToApply = pickedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
-        
-
-        
-
-        // Increment the score if the answer is correct
-        if (classToApply === correctAnswer) {
-            pickedChoice.parentElement.classList.add(correctAnswer)
-            incrementScore(HIGH_SCORE)
-        }
-        
-        
-
-        // Add the appropriate class to the answer choice element and move to the next question
-        pickedChoice.parentElement.classList.add(classToApply)
-
-        setTimeout(() => {
-            pickedChoice.parentElement.classList.remove(classToApply)
-            nextQuestion()
-        }, 1000)
-    })
+//Event Listeners
+startButton.addEventListener('click', startGame)
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++
+    nextQuestion()
 })
-
-
-
-
-// Function to increment the score
-function incrementScore(num) {
-    score += num
-    scoreElement.innerText = score
-}
-
-
-
-// Function to restart the game
-function restartGame() {
-    // Reset all variables to their initial values
-    currentQuestion = {}
-    correctAnswer = true
-    score = 0
-    questionCount = 0
-    usedQuestions = [0]
-    unusedQuestions = [...questions]
-
-    // Start the game again
-    startGame()
-}
-
-
-// Add event listeners 
-const restartButton = document.querySelector('.restart')
-restartButton.addEventListener('click', restartGame)
-startBttn.addEventListener('click', startGame);
-choices1.addEventListener('click', nextQuestion)
-choices2.addEventListener('click', nextQuestion)
-choices3.addEventListener('click', nextQuestion)
-choices4.addEventListener('click', nextQuestion)
-
 

@@ -9,37 +9,22 @@
     <title>Home Page</title>
 </head>
 <!-- This Page should Show first when loaded -->
-<body id="index-html">
+<body>
     <div class="container">
-        <div class="home">
-            <h1>Test Your Knowledge?</h1>
-            <button class="start">Start Game</button>
+        <div id="highScore"></div>
+        <div id="question-container" class="hide">
+           <div id="question">Question</div>
+           <div id="answer-buttons" class="btn-grid">
+            <button class="btn" id="choices1">Answer 1</button>
+            <button class="btn" id="choices2">Answer 2</button>
+            <button class="btn" id="choices3">Answer 3</button>
+            <button class="btn" id="choices4">Answer 4 </button>
         </div>
-    </div>
-
-
-    <div id="question">What's the answer?</div>
-    <div class="choice-container">
-        <p class="choice-letter">A</p>
-        <button class="nxt" id="choices1" >Choice</button>
-    </div>
-    <div class="choice-container">
-        <p class="choice-letter">B</p>
-        <button class ="nxt" id="choices2">Choice</button>
-    </div>
-    
-    <div class="choice-container">
-        <p class="choice-letter">C</p>
-        <button class="nxt" id="choices3">Choice</button>
-    </div>
-    <div class="choice-container">
-        <p class="choice-letter">D</p>
-        <button class="nxt"  id="choices4">Choice</button>
-    </div>
-    <button class="restart">Restart Game</button>
-
-    <div class="end">
-        <span>GAME OVER!!!!</span>
+           </div>
+        <div class="controls">
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
     </div>
        
 </body>        
